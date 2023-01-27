@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Innerpage</title>
+</head>
+
+<body>
+    <div class="main2">
+        <header>
+            <div class="profiles">
+                <img src="images/menu-bar.svg" alt="menu" id="menu">
+                <img src="images/logo.svg" alt="logo" id="logo">
+                <img src="images/search-icon.svg" alt="search" id="search">
+                <span id="sertext">Search</span>
+                <img src="images/notification-icon.svg" alt="notification" id="notification">
+                <img src="images/profile.png" alt="profile" id="profile">
+                <span id="name">John Doe</span>
+                <img src="images/downward-arrow.svg" alt="arrow" id="arrow">
+            </div>
+
+        </header>
+
+        <div class="navs">
+            <br>
+            <div class="bl2">
+                <img src="images/dashboard-default.svg" alt="dashboard1" class="navimgs">
+                <p class="navitems">Dashboard</p>
+            </div>
+            <div class="bl1">
+                <img src="images/graph-active.svg" alt="dashboard1" class="navimgs">
+                <p class="navitems">Analysis</p>
+            </div>
+            <div class="bl2">
+                <img src="images/inbox-default.svg" alt="dashboard1" class="navimgs">
+                <p class="navitems">Inbox</p>
+            </div>
+            <div class="bl2">
+                <img src="images/clock-default.svg" alt="dashboard1" class="navimgs">
+                <p class="navitems">History</p>
+            </div>
+            <div class="bl2">
+                <img src="images/user-default.svg" alt="dashboard1" class="navimgs">
+                <p class="navitems">Users</p>
+            </div>
+            <div class="bl2">
+                <img src="images/maintenance-default.svg" alt="dashboard1" class="navimgs">
+                <p class="navitems">Maintenance</p>
+            </div>
+            <div class="bl2">
+                <img src="images/setting-default.svg" alt="dashboard1" class="navimgs">
+                <p class="navitems">Setting</p>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <p id="analysis">Analysis</p>
+
+            <div id="form">
+                <p id="onecolumn">One Column</p>
+                <form>
+                    <div class="form1">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="text" aria-describedby="name"
+                                placeholder="Name">
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" id="exampleFormControlSelect1" placeholder="DropDown">
+                                <option>DropDown</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                placeholder="Multiple Line"></textarea>
+                        </div>
+                    </div>
+
+
+                    <p id="twocolumn">Two Column</p>
+                    <div class="form2">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="col">
+                                <select class="form-control" id="exampleFormControlSelect1" placeholder="DropDown">
+                                    <option>DropDown</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <p id="threecolumn">Three Column</p>
+                    <div class="form3">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name" id="colorname">
+                            </div>
+                            <div class="col">
+                                <input type="password" class="form-control" placeholder="password">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Disabled" id="disable">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <p id="fourcolumn">Four Column</p>
+                    <div class="form4">
+                        <div class="form-row">
+                            <div class="col">
+
+                                <input type="text" class="form-control is-invalid" id="validationServer03"
+                                    placeholder="Designation">
+                                <div class="invalid-feedback">
+                                    Enter Valid Data.
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                                <div class="feedback">
+                                    Enter your full name as per ID.
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+
+                            <div class="col">
+                                <select id="inputState" class="form-control">
+                                    <option selected>Select</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <p id="design">Other Design Elements</p>
+                    <p id="file">File Upload</p>
+                    <button id="button"><img src="images/cloud-upload-icon.svg" alt="" id="cloud">Upload</button>
+                    <p id="nofile">No Item Selected</p>
+
+                    <p id="radio">Radio Button</p>
+                    <div class="form5">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline1">Option 1</label>
+                        </div>
+
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline2">Option 2</label>
+                        </div>
+                    </div>
+
+                    <p id="check">Check Box</p>
+                    <div class="form6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                        </div>
+                    </div>
+
+                    <p id="snack">Snackbar</p>
+
+                    <div class="ni1">
+                        <img src="images/error-icon.svg" alt="" id="error">
+                        <p id="msg1">This is an error Message</p>
+                    </div>
+                    <div class="ni2">
+                        <img src="images/error-icon.svg" alt="" id="error">
+                        <p id="msg2">This is an information Message</p>
+                    </div>
+                    <div class="ni3">
+                        <img src="images/warning-icon.svg" alt="" id="error">
+                        <p id="msg3">This is a warning message!</p>
+                    </div>
+                    <div class="ni4">
+                        <img src="images/error-icon.svg" alt="" id="error">
+                        <p id="msg4">This is a Success Message</p>
+                    </div>
+
+
+
+
+
+                </form>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
