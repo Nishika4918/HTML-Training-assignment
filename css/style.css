@@ -302,7 +302,7 @@ span#name {
     /* padding: 5px; */
     font-size: 18px;
     text-align: center;
-    margin-top: 18px;
+    margin-top: 5px;
     width: 90px;
     height: 16px;
 }
@@ -312,14 +312,13 @@ span#name {
 
     width: 40px;
     height: 25px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin: 5px;
 }
 
 .bl1 {
 
     width: 190px;
-    height: 47px;
+    height: 43px;
     margin-left: 25px;
     border-radius: 5px;
     display: flex;
@@ -339,6 +338,11 @@ span#name {
 
     align-items: center;
 
+}
+.table {
+    width: 93% !important;
+    margin-bottom: 1rem;
+    color: #212529;
 }
 
 /* Third section */
