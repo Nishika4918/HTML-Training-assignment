@@ -10,55 +10,10 @@
 </head>
 
 <body>
-    
-           
-    <div class="header">
-        <div class="left-header">
-            <img src="images/menu-bar.svg" alt="" class="menu-bar">
-            <img src="images/logo.svg" alt="" class="logo-header">
-            <img src="images/search-icon.svg" alt="" class="search-icon"><span class="header-text">Search</span>
-        </div>
-        <div class="right-header">
-            <img src="images/notification-icon.svg" alt="" class="notification-icon">
-            <img src="images/profile.png" alt="" class="profile-photo"><span class="header-text">John Doe</span>
-            <img src="images/select-downward.svg" alt="" class="select-downward">
-        </div>
 
-    </div>
-    <div class="side-bar">
-        <div class="side-list">
-            <a href="#"><img src="images/dashboard-default.svg" alt="" class="list-img">
-                Dashboard</a>
-        </div>
-        <div class="side-list active">
-            <a href="#"><img src="images/graph-active.svg" alt="" class="list-img">
-                Analysis</a>
-        </div>
-        <div class="side-list">
-            <a href="#"><img src="images/inbox-default.svg" alt="" class="list-img">
-                Inbox</a>
-        </div>
-        <div class="side-list">
-            <a href="#"><img src="images/clock-default.svg" alt="" class="list-img">
-                History</a>
-        </div>
-        <div class="side-list">
-            <a href="#"><img src="images/user-default.svg" alt="" class="list-img">
-                Users</a>
-        </div>
-        <div class="side-list">
-            <a href="#"></a><img src="images/maintenance-default.svg" alt="" class="list-img">
-            Maintenance</a>
-        </div>
-        <div class="side-list">
-            <a href="#"></a><img src="images/setting-default.svg" alt="" class="list-img">
-            Setting</a>
-        </div>
-    </div>  
 
-        
 
-        <div class="section">
+    <!-- <div class="section">
             <p id="analysis">Analysis</p>
 
             <div id="form">
@@ -228,7 +183,348 @@
         
 
 
+    </div> -->
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-sm navbar-light bg-white">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/menu-bar.svg" alt="" class="menu-bar" id="menu">
+                        </a>
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.svg" alt="" class="logo-header">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav me-auto">
+
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#" id="search1">
+                                        <img src="images/search-icon.svg" alt="" class="search-icon">
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="images/notification-icon.svg" alt="" class="notification-icon">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="images/profile.png" alt="" class="profile-photo">
+                                        John Doe
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="images/select-downward.svg" alt="" class="select-downward">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class=" col-lg-2 col-md-4 col-sm-5 col-xs-12">
+                <div class="side-bar">
+                    <div class="side-list active">
+                        <a href="#"><img src="images/dashboard-active.svg" alt="" class="list-img">
+                            Dashboard</a>
+                    </div>
+                    <div class="side-list">
+                        <a href="#"><img src="images/graph-default.svg" alt="" class="list-img">
+                            Analysis</a>
+                    </div>
+                    <div class="side-list">
+                        <a href="#"><img src="images/inbox-default.svg" alt="" class="list-img">
+                            Inbox</a>
+                    </div>
+                    <div class="side-list">
+                        <a href="#"><img src="images/clock-default.svg" alt="" class="list-img">
+                            History</a>
+                    </div>
+                    <div class="side-list">
+                        <a href="#"><img src="images/user-default.svg" alt="" class="list-img">
+                            Users</a>
+                    </div>
+                    <div class="side-list">
+                        <a href="#"></a><img src="images/maintenance-default.svg" alt="" class="list-img">
+                        Maintenance</a>
+                    </div>
+                    <div class="side-list">
+                        <a href="#"></a><img src="images/setting-default.svg" alt="" class="list-img">
+                        Setting</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-10 col-md-8 col-sm-7 col-xs-12">
+                <div class="container-fluid main-container">
+                    <div class="row">
+                        <h1 class="col title">Analysis</h1>
+                    </div>
+                    <div id="form">
+                        <!-- <p id="onecolumn">One Column</p> -->
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">One Column</label>
+                                <input type="text" class="form-control" id="text" aria-describedby="name"
+                                    placeholder="Name">
+                            </div>
+
+
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect1" placeholder="DropDown">
+                                    <option>DropDown</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                    placeholder="Multiple Line"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Two Column</label>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
+
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-control" id="exampleFormControlSelect1"
+                                            placeholder="DropDown">
+                                            <option>DropDown</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Three Column</label>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Name" id="colorname">
+                                    </div>
+                                    <div class="col">
+                                        <input type="password" class="form-control" placeholder="password">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Disabled" id="disable">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Four Column</label>
+                                <div class="form-row">
+                                    <div class="col">
+
+                                        <input type="text" class="form-control is-invalid" id="validationServer03"
+                                            placeholder="Designation">
+                                        <div class="invalid-feedback">
+                                            Enter Valid Data.
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                        <div class="feedback">
+                                            Enter your full name as per ID.
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Username">
+                                    </div>
+
+                                    <div class="col">
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Select</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Other Design Elements</label><br>
+                                <label for="exampleInputEmail1">File Upload</label>
+
+                                <div class="form-row">
+                                    <div class="col"> <button id="button"><img src="images/cloud-upload-icon.svg" alt=""
+                                                id="cloud">Upload</button>
+                                        <span>No file Selected</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Radio Button</label>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            Option1
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                                class="custom-control-input">
+                                            Option2
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Check Box</label>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            Option 1
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                value="option2">
+                                            Option 2
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Snackbar</label>
+                                <div class="form-row">
+                                    <div class="col ni1">
+
+                                        <img src="images/error-icon.svg" alt="" id="error">
+                                        <p id="msg1">This is an error Message</p>
+
+                                    </div>
+                                    <div class="col ni2">
+
+                                        <img src="images/error-icon.svg" alt="" id="error">
+                                        <p id="msg2">This is an information Message</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="form-row">
+                                    <div class="col ni3">
+
+                                        <img src="images/warning-icon.svg" alt="" id="error">
+                                        <p id="msg3">This is a warning message!</p>
+
+                                    </div>
+                                    <div class="col ni4">
+
+                                        <img src="images/success-icon.svg" alt="" id="error">
+                                        <p id="msg4">This is a Success Message</p>
+
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Call to Action</label>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="button" value="Primary" class="box3">
+                                        <input type="button" value="Secondary" class="box4">
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Tabs</label>
+                                <div class="form-row">
+                                    <div class="col underline">
+                                        <span class="spandis" id="spanactive">Tab1</span>
+                                        <span class="spandis">Tab2</span>
+                                        <span class="spandis">Tab3</span>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ad aperiam
+                                            tempora. Minus, nesciunt excepturi repudiandae sunt deserunt pariatur quis
+                                            impedit ut at atque maiores fugiat dolorum porro ex facere. Lorem ipsum
+                                            dolor sit amet consectetur adipisicing elit. Ipsa eveniet itaque ipsam quas
+                                            obcaecati veritatis voluptatem distinctio, cum voluptate sint!
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                        </form>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
     </div>
+    </div>
+
 </body>
 
 </html>
