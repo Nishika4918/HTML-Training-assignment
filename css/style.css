@@ -339,6 +339,11 @@ img.notification-icon {
     margin: 15px;
     background-color: #ffffff;
     border-radius: 5px;
+    
+}
+.b1{
+  overflow: hidden;
+  margin: 15px 0;
 }
 .star {
     float: left;
@@ -861,8 +866,21 @@ label {
     border-bottom:2px solid gray;
 }
 
+.form-row>[class*=col-] {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+}
 
+#nofile{
+  width: 111px;
+  margin: 10px;
+  display: inline-block;
+}
 
+#file{
+  font-size: 17px;
+}
 
 
 
