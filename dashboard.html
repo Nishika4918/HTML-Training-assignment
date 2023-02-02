@@ -7,69 +7,82 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+        
     <title>dashboard</title>
 </head>
 
 <body>
-    
-      
-      
-      
-    
-    
-    
+
+
+
+
+
+
+
     <div class="container-fluid">
         <div class="row">
             <div class="col">
                 <nav class="navbar navbar-expand-sm navbar-light bg-white">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
-                            <img src="images/menu-bar.svg" alt="" class="menu-bar" id="menu">
-                          </a>
-                          <a class="navbar-brand" href="#">
+                            <img src="images/menu-bar.svg" alt="" class="menu-bar" id="menu" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                            <!-- <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"></button> -->
+                        </a>
+                        <a class="navbar-brand" href="#">
                             <img src="images/logo.svg" alt="" class="logo-header">
-                          </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="mynavbar">
-                        <ul class="navbar-nav me-auto">
-                        
-                          <li class="nav-item">
-                            <a class="navbar-brand" href="#" id="search1">
-                                <img src="images/search-icon.svg" alt="" class="search-icon">
-                                Search
-                              </a>
-                          </li>
-                        </ul>
-                         <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="navbar-brand" href="#">
-                                <img src="images/notification-icon.svg" alt="" class="notification-icon">
-                              </a>
-                                  </li>
-                                  <li class="nav-item">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav me-auto">
+
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#" id="search1">
+                                        <img src="images/search-icon.svg" alt="" class="search-icon">
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="images/notification-icon.svg" alt="" class="notification-icon">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="navbar-brand" href="#">
                                         <img src="images/profile.png" alt="" class="profile-photo">
                                         John Doe
-                                      </a>
-                                  </li>
-                                  <li class="nav-item">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="navbar-brand" href="#">
                                         <img src="images/select-downward.svg" alt="" class="select-downward">
-                                      </a>
-                                  </li>
-                                  </ul>
-                      </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </nav>
+                </nav>
             </div>
         </div>
 
         <div class="row">
-            <div class=" col-lg-2 col-md-4 col-sm-5 col-xs-12">
+            <div class=" col-lg-2">
                 <div class="side-bar">
-                    <div class="side-list active">
+                    <!-- <div class="side-list active">
                         <a href="#"><img src="images/dashboard-active.svg" alt="" class="list-img">
                             Dashboard</a>
                     </div>
@@ -96,11 +109,62 @@
                     <div class="side-list">
                         <a href="#"></a><img src="images/setting-default.svg" alt="" class="list-img">
                         Setting</a>
+                    </div> -->
+                    <!-- <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle
+                        offcanvas</button> -->
+
+                    
+                    <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+                        aria-labelledby="offcanvasResponsiveLabel">
+                        <div class="offcanvas-header">
+                            
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- <p class="mb-0">This is content within an <code>.offcanvas-lg</code>.</p> -->
+                            <div class="side-bar">
+                                <div class="side-list active">
+                                    <img src="images/dashboard-active.svg" alt="" class="list-img">
+                                        Dashboard
+                                </div>
+                                <div class="side-list">
+                                    <img src="images/graph-default.svg" alt="" class="list-img">
+                                        Analysis
+                                </div>
+                                <div class="side-list">
+                                    <img src="images/inbox-default.svg" alt="" class="list-img">
+                                        Inbox
+                                </div>
+                                <div class="side-list">
+                                    <img src="images/clock-default.svg" alt="" class="list-img">
+                                        History
+                                </div>
+                                <div class="side-list">
+                                    <img src="images/user-default.svg" alt="" class="list-img">
+                                        Users
+                                </div>
+                                <div class="side-list">
+                                    </a><img src="images/maintenance-default.svg" alt="" class="list-img">
+                                    Maintenance
+                                </div>
+                                <div class="side-list">
+                                    </a><img src="images/setting-default.svg" alt="" class="list-img">
+                                    Setting
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
+
+
+
+
                 </div>
             </div>
 
-            <div class="col-lg-10 col-md-8 col-sm-7 col-xs-12">
+            <div class="col-lg-10">
                 <div class="container-fluid main-container">
                     <div class="row">
                         <h1 class="col title">Dashboard</h1>
@@ -138,7 +202,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-7 col-sm-12">
+                        <div class="col-lg-8 col-sm-12">
                             <div class="box b1">
                                 <h2 class="sub-title">Sale</h2>
                                 <div class="sales-nav">
@@ -148,16 +212,16 @@
                                 </div>
                                 <img src="images/data-graph.png" alt="" class="data-graph">
                             </div>
-                            
-                               
-                            
-                            
+
+
+
+
                         </div>
-                        <div class="col-lg-5 col-sm-12">
+                        <div class="col-lg-4 col-sm-12">
                             <div class="box b1">
                                 <h2 class="sub-title">Sales by Country</h2>
                                 <img src="images/pie-chart.svg" alt="pie" id="pie">
-                
+
                                 <div class="row pie-details">
                                     <div class="col-6">
                                         <span class="dot dot-red"></span>United States of America
@@ -175,12 +239,13 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="row">
                         <div class="col box">
-                            <h2 class="sub-title">Invoices</h2><div class="sales-nav"><a href="#" class="sn"><span class="red">View All</span></a></div>
+                            <h2 class="sub-title">Invoices</h2>
+                            <div class="sales-nav"><a href="#" class="sn"><span class="red">View All</span></a></div>
                             <div class="table-responsive">
                                 <table class="table">
                                     <tr>
@@ -191,101 +256,119 @@
                                         <th scope="col">STATUS</th>
                                         <th scope="col">AMOUNT</th>
                                     </tr>
-                
+
                                     <tr>
                                         <td scope="row">651535</td>
                                         <td>Public Adjusting Firm</td>
                                         <td>georgia.young@example.com</td>
                                         <td>24 May, 2020</td>
-                                        <td><div class="paid">Paid</div></td>
+                                        <td>
+                                            <div class="paid">Paid</div>
+                                        </td>
                                         <td>$47,800</td>
                                     </tr>
-                
+
                                     <tr>
                                         <td scope="row">558612</td>
                                         <td>Other</td>
                                         <td>jessica.hanson@example.com</td>
                                         <td>24 May, 2020</td>
-                                        <td><div class="paid">Paid</div></td>
+                                        <td>
+                                            <div class="paid">Paid</div>
+                                        </td>
                                         <td>$98,000</td>
                                     </tr>
-                
+
                                     <tr>
                                         <td scope="row">558612</td>
                                         <td>Vendor</td>
                                         <td>alma.lawson@example.com</td>
                                         <td>8 Sep, 2020</td>
-                                        <td><div class="paid">Paid</div></td>
+                                        <td>
+                                            <div class="paid">Paid</div>
+                                        </td>
                                         <td>$20,900</td>
                                     </tr>
-                
+
                                     <tr>
                                         <td scope="row">558612</td>
                                         <td>Property Management Company</td>
                                         <td>kenzi.lawson@example.com</td>
                                         <td>22 Oct, 2020</td>
-                                        <td><div class="paid">Paid</div></td>
+                                        <td>
+                                            <div class="paid">Paid</div>
+                                        </td>
                                         <td>$10,570</td>
                                     </tr>
-                
+
                                     <tr>
                                         <td scope="row">651535</td>
                                         <td>Subcontractor Company</td>
                                         <td>Subcontractor Company</td>
                                         <td>1 Feb, 2020</td>
-                                        <td><div class="failed">Failed</div></td>
+                                        <td>
+                                            <div class="failed">Failed</div>
+                                        </td>
                                         <td>$10,200</td>
                                     </tr>
-                
+
                                     <tr>
                                         <td scope="row">651535</td>
                                         <td>Mortgage Company</td>
                                         <td>felicia.reid@example.com</td>
                                         <td>22 Oct, 2020</td>
-                                        <td><div class="pending">Pending</div></td>
+                                        <td>
+                                            <div class="pending">Pending</div>
+                                        </td>
                                         <td>$12,600</td>
                                     </tr>
-                
+
                                     <tr>
                                         <td scope="row">487441</td>
                                         <td>TPA</td>
                                         <td>dolores.chambers@example.com</td>
                                         <td>21 Sep, 2020</td>
-                                        <td><div class="paid">Paid</div></td>
+                                        <td>
+                                            <div class="paid">Paid</div>
+                                        </td>
                                         <td>$11,170</td>
                                     </tr>
-                
+
                                     <tr>
                                         <td scope="row">267400</td>
                                         <td>Fire Department</td>
                                         <td>nevaeh.simmons@example.com</td>
                                         <td>17 Oct, 2020</td>
-                                        <td><div class="failed">Failed</div></td>
+                                        <td>
+                                            <div class="failed">Failed</div>
+                                        </td>
                                         <td>$28,000</td>
                                     </tr>
-                
+
                                     <tr>
                                         <td scope="row">$28,000</td>
                                         <td>Insurance Carrier</td>
                                         <td>curtis.weaver@example.com</td>
                                         <td>21 Sep, 2020</td>
-                                        <td><div class="paid">Paid</div></td>
+                                        <td>
+                                            <div class="paid">Paid</div>
+                                        </td>
                                         <td>$10,000</td>
                                     </tr>
-                
+
                                 </table>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
-            
+
             </div>
         </div>
     </div>
 
 
-    
+
 </body>
 
 </html>

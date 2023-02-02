@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+        
     <title>Innerpage</title>
 </head>
 
@@ -23,7 +33,8 @@
                 <nav class="navbar navbar-expand-sm navbar-light bg-white">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
-                            <img src="images/menu-bar.svg" alt="" class="menu-bar" id="menu">
+                            <img src="images/menu-bar.svg" alt="" class="menu-bar" id="menu" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
                         </a>
                         <a class="navbar-brand" href="#">
                             <img src="images/logo.svg" alt="" class="logo-header">
@@ -67,40 +78,54 @@
         </div>
 
         <div class="row">
-            <div class=" col-lg-2 col-md-4 col-sm-5 col-xs-12">
+            <div class="col-lg-2">
                 <div class="side-bar">
-                    <div class="side-list active">
-                        <a href="#"><img src="images/dashboard-active.svg" alt="" class="list-img">
-                            Dashboard</a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"><img src="images/graph-default.svg" alt="" class="list-img">
-                            Analysis</a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"><img src="images/inbox-default.svg" alt="" class="list-img">
-                            Inbox</a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"><img src="images/clock-default.svg" alt="" class="list-img">
-                            History</a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"><img src="images/user-default.svg" alt="" class="list-img">
-                            Users</a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"></a><img src="images/maintenance-default.svg" alt="" class="list-img">
-                        Maintenance</a>
-                    </div>
-                    <div class="side-list">
-                        <a href="#"></a><img src="images/setting-default.svg" alt="" class="list-img">
-                        Setting</a>
+                    <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+                        aria-labelledby="offcanvasResponsiveLabel">
+                        <div class="offcanvas-header">
+                            
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                         
+                            <div class="side-bar">
+                                <div class="side-list active">
+                                    <img src="images/dashboard-active.svg" alt="" class="list-img">
+                                        Dashboard
+                                </div>
+                                <div class="side-list">
+                                    <img src="images/graph-default.svg" alt="" class="list-img">
+                                        Analysis
+                                </div>
+                                <div class="side-list">
+                                    <img src="images/inbox-default.svg" alt="" class="list-img">
+                                        Inbox
+                                </div>
+                                <div class="side-list">
+                                    <img src="images/clock-default.svg" alt="" class="list-img">
+                                        History
+                                </div>
+                                <div class="side-list">
+                                    <img src="images/user-default.svg" alt="" class="list-img">
+                                        Users
+                                </div>
+                                <div class="side-list">
+                                    </a><img src="images/maintenance-default.svg" alt="" class="list-img">
+                                    Maintenance
+                                </div>
+                                <div class="side-list">
+                                    </a><img src="images/setting-default.svg" alt="" class="list-img">
+                                    Setting
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-10 col-md-8 col-sm-7 col-xs-12">
+            <div class="col-lg-10">
                 <div class="container-fluid main-container">
                     <div class="row">
                         <h1 class="col title">Analysis</h1>
